@@ -3,7 +3,6 @@
 /* @jsx createElement */
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 const operators = ['+', '-', '*', '/', '='];
-const DEFUALT_OPERATOR = '+';
 
 function createElement(tagName, props, ...children) {
   const element = document.createElement(tagName);
@@ -38,8 +37,6 @@ function multiply(a, b) {
 function divide(a, b) {
   return a / b;
 }
-
-const makeDecimal = (accumulator, currentValue) => accumulator * 10 + currentValue;
 
 function ArithmeticOperates(prevNum, currentNum, operation) {
   const doArithmetic = {
